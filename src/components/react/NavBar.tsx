@@ -1,7 +1,7 @@
-import { useState } from "react"
+// import { useState } from "react"
 
 export default function NavBar(){
-    const [isMenuOpen, setMenu] = useState(false);
+    // const [isMenuOpen, setMenu] = useState(false);
 
     return(
         <>

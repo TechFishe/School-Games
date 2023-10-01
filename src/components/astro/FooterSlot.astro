@@ -1,0 +1,14 @@
+---
+    interface Props{
+        title: string
+    }
+
+    const {title}: Props = Astro.props;
+---
+
+<article class="px-2 flex flex-col">
+    <span class="text-lg tracking-wide font-mono text-moonstone">{title}</span>
+    <ul>
+        <slot />
+    </ul>
+</article>

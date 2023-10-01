@@ -1,0 +1,13 @@
+---
+    interface Props{
+        mainText: string,
+        blueWord: string,
+        useQuestion: boolean,
+        customClasses?: string
+    }
+
+    const {mainText, blueWord, useQuestion, customClasses = ""}:Props = Astro.props;
+
+---
+
+<span class=`text-9xl font-black tracking-widest w-full text-center mt-20 select-none ${customClasses}`>{mainText}<span class="text-moonstone drop-shadow-[0_20px_15px_rgba(99,176,205,0.25)]">{blueWord}</span>{useQuestion ? "?" : "."}</span>
